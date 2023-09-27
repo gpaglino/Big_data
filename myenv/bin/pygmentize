@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/run/media/guillex/SYSTEM/Buck UP/SEGUNDO CUATRIMESTRE/ELEMENTOS DE APRENDIZAJE DE MÁQUINA Y BIG DATA COM-A/Semana 18-09-2023 - 24-09-2023/Actividades y Trabajos Practicos/myenv/bin/python" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from pygments.cmdline import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
